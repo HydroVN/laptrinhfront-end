@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2</title>
+</head>
+<body>
+    <script>
+        function filterArray(array, callback){
+            let result = []; //Mảng chứa kết quả
+            // Duyệt mảng
+            for(let i = 0; i < array.length; i++){
+                if(callback(array[i])){
+                    result.push(array[i]);
+                }//Nếu phần tử thứ i thỏa mãn
+            }
+            return result;
+        }
+        // Gọi hàm
+        console.log(filterArray([4,6,15,9,5],n => n % 2 === 0));
+    </script>
+</body>
+</html>

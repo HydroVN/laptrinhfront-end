@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 6</title>
+</head>
+<body>
+    <script>
+        function sumArray(array, callback){
+            return array.reduce((sum, current) => sum + callback(current), 0); 
+        } //reduce() dùng để thực thi một hàm lên từng phần tử của mảng (từ trái sang phải)
+          // với một biến tích lũy để thu về một giá trị duy nhất
+        console.log(sumArray([1, 2, 3], (num) => num * 2));
+    </script>
+</body>
+</html>
